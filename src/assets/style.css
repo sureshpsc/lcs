@@ -1,0 +1,261 @@
+/* Ensure the page takes full height */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Home Page Styling */
+/* Hero Section Styling */
+.hero-section {
+  background-image: url('../../public/images/hero-bgp2.jpg'); /* Your uploaded image */
+  background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center; /* Centers the image */
+  height: 100vh; /* Makes the hero section cover the full height of the screen */
+  color: white; /* Ensures text is readable */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centers the content vertically */
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.cta-buttons {
+  margin-top: 1.5rem;
+}
+
+.cta-button {
+  margin: 0.5rem;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Footer styling */
+.footer {
+  position: relative;
+  background-color: black;
+  border-top: 1px solid #e0e0e0;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer .social-links a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.footer .social-links a:hover {
+  text-decoration: underline;
+}
+
+/* Scroll to top arrow styling */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  background-color: #0056b3;
+}
+
+.scroll-to-top:active {
+  background-color: #003f7f;
+}
+
+/* Header customization */
+.header-custom {
+  padding: 15px 0;  /* Increase header height */
+}
+
+.navbar-brand {
+  font-size: 1.75rem;  /* Make brand name slightly larger */
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.1rem;  /* Increase font size of nav links */
+}
+
+/* Ensure carousel text is bold and large for better visibility */
+.carousel-caption h3 {
+  font-size: 2rem;  /* Larger font size for heading */
+  font-weight: bold; /* Make the heading bold */
+}
+
+.carousel-caption p {
+  font-size: 1.2rem; /* Larger text for paragraphs */
+  line-height: 1.5;  /* Increase line spacing for readability */
+}
+
+/* Optional: Ensure images scale properly */
+.carousel-item img {
+  width: 100%;   /* Make sure the image takes up the full width of the container */
+  height: auto;  /* Maintain aspect ratio */
+  object-fit: cover; /* Ensures that the image covers the area without distortion */
+}
+
+/* Optional: Custom styles for the About Us page */
+.carousel-item img {
+  width: 100%;
+  height: auto;  /* Ensuring responsive images */
+}
+
+.text-primary {
+  color: #007bff;
+}
+
+/* Optional: Custom styles for the Contact Us page */
+.container {
+  max-width: 1200px;
+}
+
+.card {
+  border-radius: 10px; /* Rounded corners for cards */
+}
+
+.card-body {
+  padding: 20px;
+}
+
+h4 {
+  color: #333;
+  font-weight: bold;
+}
+
+a {
+  color: #007bff;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* General Page Styles */
+.services-hero-section {
+  padding: 50px 0; /* Space around the content */
+  color: #333; /* Darker text color for readability */
+  text-align: center;
+}
+
+/* Hero Section Text */
+.services-hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.services-hero-section p {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  color: #555; /* Slightly lighter color for the description */
+}
+
+/* Section Styles */
+h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.cta-section {
+  background-color: #f8f9fa;
+  padding: 3rem;
+}
+
+.cta-section h3 {
+  font-size: 2.5rem;
+}
+
+.cta-section p {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+img.img-fluid {
+  border-radius: 10px;
+}
+
+button {
+  margin-top: 1rem;
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+  .services-hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .services-hero-section p {
+    font-size: 1rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+/* General Styling */
+.contact-card {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.contact-card h4 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.contact-card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact-card .btn {
+  margin-top: 1rem;
+  padding: 0.8rem;
+}
+
+/* Form Fields */
+.form-control {
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+  .contact-card {
+    padding: 1.5rem;
+  }
+
+  .contact-card h4 {
+    font-size: 1.5rem;
+  }
+
+  .contact-card p {
+    font-size: 0.9rem;
+  }
+
+  .contact-card .btn {
+    padding: 1rem;
+  }
+
+  .contact-card .form-control {
+    padding: 1rem;
+  }
+}
