@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap'; // Using react-bootstrap components for layout and styling
+import { Link } from 'react-router-dom';  // Import Link from react-router-dom
 
 const ServicesPage = () => {
   return (
@@ -55,7 +56,10 @@ const ServicesPage = () => {
       <div className="cta-section text-center my-5" style={{ backgroundColor: '#f8f9fa', padding: '3rem' }}>
         <h3>Ready to Take Your Business to the Next Level?</h3>
         <p>Contact us today to learn how our services can help you achieve your business goals.</p>
-        <Button variant="primary" href="/contact">Contact Us</Button>
+        {/* Replace href with Link component */}
+        <Link to="/contact">
+          <Button variant="primary">Contact Us</Button>
+        </Link>
       </div>
     </div>
   );
