@@ -6,10 +6,15 @@ import 'bootstrap/dist/js/bootstrap.min.js';  // Import Bootstrap JavaScript
 import './assets/style.css';  // Import global CSS (if you have a global stylesheet)
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+// Import HashRouter from react-router-dom
+import { HashRouter } from 'react-router-dom';
+
 // Render the App component inside the div with id 'root' in index.html
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <HashRouter> {/* Wrap your App with HashRouter */}
+      <App />
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
