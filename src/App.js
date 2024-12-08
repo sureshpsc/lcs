@@ -12,7 +12,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <Router>
+    <>
       <Header />
       <Container>
         <Routes>
@@ -23,7 +23,7 @@ function App() {
         </Routes>
       </Container>
       <Footer />
-    </Router>
+    </>
   );
 }
 
